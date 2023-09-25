@@ -5,7 +5,6 @@ import algs.hw4.map.FilterAirport;
 import algs.hw4.map.FlightMap;
 import algs.hw4.map.Information;
 
-
 public class Connected {
 	public static void main(String[] args) {
 		FilterAirport justLower48 = new FilterLower48();
@@ -54,7 +53,6 @@ public class Connected {
 	        	}
 	        }
         
-        
         for (int key : southwest.labels.keys()) {
         	if (southwestDFS.hasPathTo(key) == false) {
         		if (airline1 == "") {
@@ -69,8 +67,6 @@ public class Connected {
         			System.out.println(southwest.labels.get(key)); 
         		}
         	}
-        }
-        
-        
+        }   
 	}
 }

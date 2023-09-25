@@ -35,18 +35,18 @@ public class FlightStats {
 					count++;
 					total += distance;
 
-					if (distance < shortest) {
-						shortest = distance;
-						shortestFrom = key;
-						shortestTo = adj;
-					} 
+				if (distance < shortest) {
+					shortest = distance;
+					shortestFrom = key;
+					shortestTo = adj;
+				} 
 
-					if(distance > longest) {
-						longest = distance;
-						longestFrom = key;
-						longestTo = adj;
-					}
+				if(distance > longest) {
+					longest = distance;
+					longestFrom = key;
+					longestTo = adj;
 				}
+			}
 		}
 
 		System.out.println("Shortest flight for Delta is from " + delta.labels.get(shortestFrom) + " to " + delta.labels.get(shortestTo) + " for " + shortest + " miles." );
@@ -75,17 +75,17 @@ public class FlightStats {
 					count++;
 					total += distance;
 
-					if (distance < shortest) {
-						shortest = distance;
-						shortestFrom = key;
-						shortestTo = adj;
-					} 
+				if (distance < shortest) {
+					shortest = distance;
+					shortestFrom = key;
+					shortestTo = adj;
+				} 
 
-					if(distance > longest) {
-						longest = distance;
-						longestFrom = key;
-						longestTo = adj;
-					}
+				if(distance > longest) {
+					longest = distance;
+					longestFrom = key;
+					longestTo = adj;
+				}
 			}
 		}
 
